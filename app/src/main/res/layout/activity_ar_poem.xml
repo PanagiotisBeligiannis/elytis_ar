@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 1. ΚΑΜΕΡΑ (ΖΩΝΤΑΝΟ ΦΟΝΤΟ) -->
+    <androidx.camera.view.PreviewView
+        android:id="@+id/cameraPreview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- 2. ΕΙΚΟΝΑ ΠΟΙΗΜΑΤΟΣ (TRANSPARENT OVERLAY) -->
+    <ImageView
+        android:id="@+id/overlayImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:alpha="0.5"
+        android:src="@drawable/p0" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#40000000"/>
+
+    <!-- 3. ΚΕΙΜΕΝΟ ΠΟΙΗΜΑΤΟΣ (SCROLL) -->
+    <ScrollView
+        android:id="@+id/poemScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="32dp"
+        android:fillViewport="true"
+        android:background="@android:color/transparent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@android:color/transparent">
+
+            <TextView
+                android:id="@+id/poemText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:lineSpacingExtra="8dp"
+                android:textStyle="normal"
+                android:gravity="center_horizontal"
+                android:text="Εδώ θα μπει το ποίημα..." />
+
+            <Button
+                android:id="@+id/btnPlay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Play" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
