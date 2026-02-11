@@ -15,13 +15,6 @@ The application presents a multimedia interpretation of poetry through motion, s
 
 > A short demonstration of the application in action.
 
-(Insert compressed MP4 under 100MB OR GIF here)
-
-Example if using GIF:
-
-![Elytis AR Demo](demo.gif)
-
-Example if using video file in repo:
 
 [Watch the Demo Video](eleni.mp4)
 
