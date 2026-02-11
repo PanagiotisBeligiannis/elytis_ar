@@ -1,10 +1,55 @@
-*.iml
-.gradle
-/local.properties
-/.idea
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+# ===============================
+# Gradle
+# ===============================
+.gradle/
+build/
+
+# ===============================
+# Local configuration
+# ===============================
 local.properties
+
+# ===============================
+# Android Studio / IntelliJ
+# ===============================
+.idea/
+*.iml
+misc.xml
+deploymentTargetDropDown.xml
+render.experimental.xml
+
+# ===============================
+# Build outputs
+# ===============================
+*.apk
+*.aab
+output-metadata.json
+
+# ===============================
+# Native build
+# ===============================
+.externalNativeBuild/
+.cxx/
+
+# ===============================
+# Logs / OS
+# ===============================
+*.log
+.DS_Store
+
+# ===============================
+# Captures / Profiling
+# ===============================
+captures/
+*.hprof
+
+# ===============================
+# Keystore
+# ===============================
+*.jks
+*.keystore
+
+# ===============================
+# Google Services
+# ===============================
+google-services.json
